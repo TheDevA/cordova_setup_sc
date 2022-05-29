@@ -1,28 +1,31 @@
 #!/bin/bash
-echo "starting.."
+MAIN_DIR=/cordovasetup
+echo "starting..|--------------------"
 
-echo "installing packges.."
+echo "installing packges..|--------------------"
 apt -y install nodejs npm openjdk-8-jdk
 
-echo "installing cordova..."
+echo "installing cordova...|--------------------"
 npm install -g cordova
 
-echo "makeing dirs.." 
-cd ~/Desktop/
+echo "makeing dirs..|--------------------" 
+mkdir $MAIN_DIR
+chmod 777 MAIN_DIR
+cd $MAIN_DIR
 
 mkdir test
-cd ~/Desktop/test
+cd $MAIN_DIR/test
 mkdir android
 
-echo "creating cordova project..."
+echo "creating cordova project...|--------------------"
 cordova create hello com.example.hello HelloWorld
 
-cd ~/Desktop/test/hello
+cd $MAIN_DIR/test/hello
 
-echo "adding android platform to the project"
+echo "adding android platform to the project|--------------------"
 cordova platform add android
 
-echo "cordova requirements:"
+echo "cordova requirements:|--------------------"
 cordova requirements
 
 
