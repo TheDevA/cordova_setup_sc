@@ -8,16 +8,16 @@ echo "installing cordova..."
 npm install -g cordova
 
 echo "makeing dirs.." 
-cd $HOME/Desktop/
+cd ~/Desktop/
 
 mkdir test
-cd $HOME/Desktop/test
+cd ~/Desktop/test
 mkdir android
 
 echo "creating cordova project..."
 cordova create hello com.example.hello HelloWorld
 
-cd $HOME/Desktop/test/hello
+cd ~/Desktop/test/hello
 
 echo "adding android platform to the project"
 cordova platform add android
