@@ -11,7 +11,7 @@ echo "makeing dirs.."
 cd $HOME/Desktop/
 
 mkdir test
-
+cd $HOME/Desktop/test
 mkdir android
 
 echo "creating cordova project..."
