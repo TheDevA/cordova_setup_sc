@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "starting.."
 
 echo "installing packges.."
