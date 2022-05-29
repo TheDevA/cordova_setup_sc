@@ -10,7 +10,7 @@ npm install -g cordova
 
 echo "makeing dirs..|--------------------" 
 mkdir $MAIN_DIR
-chmod 777 MAIN_DIR
+chmod 777 $MAIN_DIR
 cd $MAIN_DIR
 
 mkdir test
